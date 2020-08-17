@@ -1,0 +1,24 @@
+#customize-controls .control-section-tr .accordion-section-title:hover,
+#customize-controls .control-section-tr .accordion-section-title:focus {
+	background-color: #181818;
+	color: #fff;
+}
+
+.control-section-tr .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+	background-color: #eb4986;
+	border-color: #eb4986;
+	color: #fff;
+}
+
+.rtl .control-section-tr .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}
+
+li#accordion-section-tr h3.accordion-section-title {
+    background-color: #181818;
+    color: #fff;
+}

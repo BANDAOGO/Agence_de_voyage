@@ -1,0 +1,78 @@
+.comment-list, .commentlist{
+    .comment{
+        //background: none !important;
+        .comment_container{
+            img{
+                max-width: 65px;
+                @media(min-width: 768px){
+                    margin-right: 5.8823529412%;
+                    margin-left: 40px;
+                }
+            }
+            .comment-text{
+                padding: 1.618em;
+                background-color: #f8f8f8;
+                border-radius: 3px;
+                box-shadow: 0 20px 30px rgba(#000, .15);
+                display: inline-block;
+                width: 76.4705882353%;
+                float: right;
+                margin: 0;
+                @media(max-width: 575px){
+                    width: 100%;
+                }
+                p{
+                    padding-left: 0;
+                }
+                .reply{
+                    a{
+                        text-decoration: none;
+                        &::before{
+                            content: "\f3e5";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .comment-body{
+            .comment-meta{
+                text-align: center;
+                .comment-author{
+                    img{
+                        display: inline-block;
+                        float: unset;
+                    }
+                    .fn{
+                        a{
+                            color: #2c2d33;
+                            line-height: 18px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .comment-content{
+                .comment-text{
+                    box-shadow: 0 20px 30px rgba(#000, .15);
+                }
+                .reply{
+                    a.comment-reply-link{
+                        &::before{
+                            content: "\f3e5";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#cancel-comment-reply-link{
+    text-decoration: none;
+}

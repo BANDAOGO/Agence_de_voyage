@@ -1,0 +1,26 @@
+.wp-travel{
+    .wp-travel-error{
+        background-color: #a10000;
+    }
+    .wp-travel-message{
+        background-color: #0aa525;
+    }
+    .wp-travel-info{
+        background-color: #1e85be;
+    }
+    .wp-travel-error, .wp-travel-info, .wp-travel-message{
+        border: 0;
+        color: #fff;
+        &::before{
+            height: 100%;
+            width: 60px;
+            background: rgba(#000, .3);
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+    }
+}

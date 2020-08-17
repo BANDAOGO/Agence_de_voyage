@@ -1,0 +1,777 @@
+# <!=Copyright (C) 2020 WEN Solutions
+# This file is distributed under the GNU General Public License v3 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Travelstore 1.0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-10 12:27:45+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WEN Solutions <info@wensolutions.com>\n"
+"Language-Team: \n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: ../../travelstore\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: inc/classes/travelstore-breadcrumb-class.php:326
+msgid "Browse:"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:330
+msgid "Home"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:332
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:334
+msgid "Archives"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:337
+#. Translators: %s is the search query. The HTML entities are opening and
+#. closing curly quotes.
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:340
+#. Translators: %s is the page number.
+msgid "Page %s"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:343
+#. Translators: Minute archive title. %s is the minute time format.
+msgid "Minute %s"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:346
+#. Translators: Weekly archive title. %s is the week date format.
+msgid "Week %s"
+msgstr ""
+
+#: inc/customizer/core-options.php:25
+msgid ""
+"Check to enable or display the content on static front page. Note: To "
+"enable travelstore sections, select \"Homepage\" template for your static "
+"homepage."
+msgstr ""
+
+#: inc/customizer/core-options.php:26
+msgid "Display static contents?"
+msgstr ""
+
+#: inc/customizer/customizer.php:27
+msgid "Travelstore Settings"
+msgstr ""
+
+#: inc/customizer/helpers.php:90
+msgid "Banner Slider"
+msgstr ""
+
+#: inc/customizer/helpers.php:95
+msgid "Trip Search"
+msgstr ""
+
+#: inc/customizer/helpers.php:99
+msgid "Category Slider"
+msgstr ""
+
+#: inc/customizer/helpers.php:105
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/customizer/helpers.php:112
+msgid "Featured Trips"
+msgstr ""
+
+#: inc/customizer/helpers.php:116
+msgid "Trip Offers"
+msgstr ""
+
+#: inc/customizer/helpers.php:124
+msgid "Customer Reviews"
+msgstr ""
+
+#: inc/customizer/helpers.php:176
+msgid "Select Taxonomy"
+msgstr ""
+
+#: inc/customizer/helpers.php:177
+msgid "Category"
+msgstr ""
+
+#: inc/customizer/helpers.php:181
+msgid "Trip Locations"
+msgstr ""
+
+#: inc/customizer/helpers.php:182 sections/trip-search.php:61
+#: sections/trip-search.php:62 sections/trip-search.php:63
+msgid "Trip Types"
+msgstr ""
+
+#: inc/customizer/helpers.php:183
+msgid "Trip Activities"
+msgstr ""
+
+#: inc/customizer/helpers.php:208
+msgid "Select a post or page..."
+msgstr ""
+
+#: inc/customizer/helpers.php:262
+msgid "Select a category..."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/banner-slider.php:42
+#: inc/customizer/travelstore-settings/customer-reviews.php:48
+#: inc/customizer/travelstore-settings/featured-trips.php:46
+#: inc/customizer/travelstore-settings/latest-trips.php:42
+#: inc/customizer/travelstore-settings/trip-offers.php:48
+#: inc/customizer/travelstore-settings/trip-search.php:46
+#: inc/customizer/travelstore-settings/trips-by-category.php:42
+msgid "Enable Section?"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/banner-slider.php:55
+msgid "If no taxonomy is selected, It will display the trips slides randomly."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/banner-slider.php:64
+#: inc/customizer/travelstore-settings/latest-trips.php:102
+#: inc/customizer/travelstore-settings/trip-offers.php:108
+#: inc/customizer/travelstore-settings/trips-by-category.php:105
+msgid "Taxonomy"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/banner-slider.php:86
+#: inc/customizer/travelstore-settings/banner-slider.php:108
+#: inc/customizer/travelstore-settings/latest-trips.php:124
+#: inc/customizer/travelstore-settings/latest-trips.php:146
+#: inc/customizer/travelstore-settings/trip-offers.php:130
+msgid "Select Destination"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/banner-slider.php:130
+#: inc/customizer/travelstore-settings/latest-trips.php:168
+#: inc/customizer/travelstore-settings/trip-offers.php:152
+msgid "Select Trip Types"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/banner-slider.php:152
+#: inc/customizer/travelstore-settings/latest-trips.php:190
+#: inc/customizer/travelstore-settings/trip-offers.php:174
+msgid "Select Trip Activity"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/customer-reviews.php:67
+#: inc/customizer/travelstore-settings/featured-trips.php:65
+#: inc/customizer/travelstore-settings/latest-trips.php:80
+#: inc/customizer/travelstore-settings/trip-offers.php:86
+#: inc/customizer/travelstore-settings/trips-by-category.php:61
+msgid "Title"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/customer-reviews.php:80
+msgid "Filter the reviews according to the trip average ratings."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/customer-reviews.php:89
+msgid "Display all reviews"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/customer-reviews.php:90
+msgid "From 3 stars and above"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/customer-reviews.php:91
+msgid "From 4 stars and above"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/customer-reviews.php:92
+msgid "5 stars only"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/customer-reviews.php:94
+msgid "Filter reviews"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:92
+msgid ""
+"If no taxonomy is selected, It will display the latest trips from all "
+"categories."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:202
+#: inc/customizer/travelstore-settings/latest-trips.php:231
+#: inc/customizer/travelstore-settings/trip-offers.php:209
+#: inc/customizer/travelstore-settings/trip-offers.php:238
+msgid "Call To Action"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:221
+#: inc/customizer/travelstore-settings/trip-offers.php:228
+msgid "Search or select page or post for CTA"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:237
+#: inc/customizer/travelstore-settings/trip-offers.php:250
+msgid ""
+"Select \"Default\" for selected page or post id link, \"Trip Archives\" for "
+"WP Travel archives link or \"Custom Link\" for CTA custom link."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:239
+#: inc/customizer/travelstore-settings/latest-trips.php:246
+#: inc/customizer/travelstore-settings/trip-offers.php:261
+msgid "Default"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:240
+#: inc/customizer/travelstore-settings/trip-offers.php:262
+msgid "Trip Archives"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:241
+#: inc/customizer/travelstore-settings/latest-trips.php:247
+#: inc/customizer/travelstore-settings/latest-trips.php:291
+#: inc/customizer/travelstore-settings/trip-offers.php:263
+#: inc/customizer/travelstore-settings/trip-offers.php:287
+msgid "Custom Link"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:244
+msgid ""
+"Select \"Default\" for selected page or post id link, \"Custom Link\" for "
+"CTA custom link."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:269
+#: inc/customizer/travelstore-settings/trip-offers.php:265
+msgid "CTA Button Link"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/latest-trips.php:280
+#: inc/customizer/travelstore-settings/trip-offers.php:276
+msgid "Enter a custom link for the call to action content."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/trip-offers.php:98
+msgid ""
+"If no taxonomy is selected, It will display the trip offers from all "
+"categories."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/trip-offers.php:185
+msgid "Total number of sale enabled trips that you would like to display."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/trip-offers.php:197
+msgid "Number of offer trips"
+msgstr ""
+
+#: inc/customizer/travelstore-settings/trips-by-category.php:76
+msgid "Mention the number of items to display."
+msgstr ""
+
+#: inc/customizer/travelstore-settings/trips-by-category.php:84
+msgid "Number Of Items"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:330
+#. translators: %s: plugin name.
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:332
+#. translators: %s: plugin name.
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:370
+#. translators: 1: plugin name(s).
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:386
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:827
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2533
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:387
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:388
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:390
+#. translators: 1: plugin name.
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:392
+#. translators: 1: plugin name.
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:394
+#. translators: 1: dashboard link.
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:934
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:1982
+#. translators: %s: version number
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2392
+#. translators: 1: number of plugins.
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2396
+#. translators: 1: number of plugins.
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2400
+#. translators: 1: number of plugins.
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2603
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2608
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2614
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3498
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3501
+#. translators: 1: plugin name, 2: error message.
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3503
+#. translators: 1: plugin name.
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3509
+#. translators: 1: plugin name.
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3512
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3517
+#. translators: 1: plugin name.
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:3520
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm-plugin/tgmpa-hook.php:66
+msgid "WP Travel"
+msgstr ""
+
+#: sections/featured-trips.php:52 sections/trip-categories.php:81
+msgid "Product Categories"
+msgstr ""
+
+#: sections/latest-trips.php:37 sections/loops/banner-slider.php:37
+#: sections/loops/latest-trips.php:76 sections/trip-offers.php:35
+msgid "Read More"
+msgstr ""
+
+#: sections/latest-trips.php:41 sections/trip-offers.php:39
+msgid "Book More"
+msgstr ""
+
+#: sections/latest-trips.php:83 sections/trip-offers.php:48
+msgid "Recent Products"
+msgstr ""
+
+#: sections/loops/banner-slider.php:33 sections/loops/featured-trips.php:58
+#: sections/loops/latest-trips.php:72 sections/loops/trip-offers.php:74
+msgid "Book Now"
+msgstr ""
+
+#: sections/loops/customer-reviews.php:71
+msgid "View this trip"
+msgstr ""
+
+#: sections/loops/trip-offers.php:59
+msgid "Sale!"
+msgstr ""
+
+#: sections/trip-search.php:34
+msgid "Trip Search Form"
+msgstr ""
+
+#: sections/trip-search.php:43 sections/trip-search.php:44
+#: sections/trip-search.php:45
+msgid "All Location"
+msgstr ""
+
+#: sections/trip-search.php:76
+msgid "Keyword"
+msgstr ""
+
+#: sections/trip-search.php:79
+msgid "Search"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Travelstore"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://wensolutions.com/themes/travelstore"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Travelstore is the WP Travel compatible child theme for storefront theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WEN Solutions"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wensolutions.com/"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:328
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:967
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:993
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:1019
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:1043
+#: inc/classes/travelstore-breadcrumb-class.php:1085
+#: inc/classes/travelstore-breadcrumb-class.php:1135
+#: inc/classes/travelstore-breadcrumb-class.php:1173
+#: inc/classes/travelstore-breadcrumb-class.php:1636
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:1045
+#: inc/classes/travelstore-breadcrumb-class.php:1137
+#: inc/classes/travelstore-breadcrumb-class.php:1640
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:1047
+#: inc/classes/travelstore-breadcrumb-class.php:1644
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/classes/travelstore-breadcrumb-class.php:1087
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:1121
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2342
+#. translators: 1: install status, 2: update status
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2388
+#. translators: 1: number of plugins.
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""

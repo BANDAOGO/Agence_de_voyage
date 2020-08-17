@@ -1,0 +1,333 @@
+/*--------------------------------------------------------------
+# Blue Color
+--------------------------------------------------------------*/
+#respond input[type="submit"]:hover,
+#respond input[type="submit"]:focus,
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover,
+.pagination .page-numbers:focus,
+.reply a:hover,
+.reply a:focus,
+.btn:hover,
+.btn:focus,
+#travel-preparation .prepared-list,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now:hover,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now:focus,
+.wp-travel-toolbar .wp-travel-post-filter .wp-travel-filter-by-heading,
+.ws-theme-cart-page .coupon input[type=submit]:hover, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type=submit]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type=submit]:hover, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type=submit]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon textarea[type=submit]:hover, 
+.ws-theme-cart-page .coupon input[type=submit]:focus, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type=submit]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type=submit]:focus, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type=submit]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon textarea[type=submit]:focus, 
+.ws-theme-cart-page .actions .book-now-btn:hover, .ws-theme-cart-page .actions .book-now-btn:focus, .ws-theme-cart-page button[disabled]:hover, 
+.ws-theme-cart-page input[disabled]:hover, 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[disabled]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page select[disabled]:hover,
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[disabled]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page textarea[disabled]:hover, 
+.ws-theme-cart-page button[disabled]:focus, .ws-theme-cart-page input[disabled]:focus, 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[disabled]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page select[disabled]:focus, 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[disabled]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page textarea[disabled]:focus, 
+.wp-travel-form-field.button-field input[type="submit"]:hover, .wp-travel-form-field.button-field input[type="submit"]:focus, 
+.payment-content input[type="submit"]:hover, 
+.payment-content input[type="submit"]:focus, 
+.dashboard-tab .payment-content input[type="submit"]:hover, 
+.dashboard-tab .account-setting input[type="submit"]:hover, 
+.dashboard-tab .payment-content input[type="submit"]:focus, 
+.dashboard-tab .account-setting input[type="submit"]:focus, 
+.wp-travel-default-article .wp-travel-explore a:hover, 
+.wp-travel-default-article .wp-travel-explore a:focus, 
+.wp-travel-toolbar .wp-travel-filter-button .btn-wp-travel-filter:hover, 
+.wp-travel-toolbar .wp-travel-filter-button .btn-wp-travel-filter:focus,
+.wp-travel-trip-meta-info,
+.wp-travel.trip-headline-wrapper .wp-travel-booknow-btn,
+#wp-travel-send-enquiries:hover, 
+#wp-travel-send-enquiries:focus,
+.dashboard-tab ul.resp-tabs-list {
+	background-color: #099;
+}
+
+#respond input[type="submit"],
+a,
+#secondary .cat-links a,
+#secondary a:hover,
+#secondary a:focus,
+.reply a,
+.comment-meta .url:hover,
+.comment-meta .url:focus,
+.btn,
+#recommended-packages .post-title a:hover,
+#recommended-packages .post-title a:focus,
+.location a:hover,
+.location a:focus,
+#call-to-action .wp-travel-average-review:before,
+#travel-preparation .prepared-list .item-wrapper .entry-title a:hover,
+#travel-preparation .prepared-list .item-wrapper .entry-title a:focus,
+#travel-preparation .prepared-list .item-wrapper .entry-title a:hover i,
+#travel-preparation .prepared-list .item-wrapper .entry-title a:focus i,
+#travel-destinations .entry-title a:hover,
+#travel-destinations .entry-title a:focus,
+.destination-item-wrapper .wp-travel-booknow-btn:hover,
+.destination-item-wrapper .wp-travel-booknow-btn:focus,
+#latest-posts .entry-title a:hover,
+#latest-posts .entry-title a:focus,
+.archive-blog-wrapper .entry-title a:hover,
+.archive-post-wrapper .entry-title a:focus,
+.sticky-post-wrapper .entry-title a:hover,
+.sticky-post-wrapper .entry-title a:focus,
+#colophon a:hover,
+#colophon a:focus,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now,
+.ws-theme-cart-page .coupon input[type=submit], 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type=submit], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type=submit], 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type=submit], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon textarea[type=submit],
+.ws-theme-cart-page .actions .book-now-btn,
+.ws-theme-cart-page button[disabled], 
+.ws-theme-cart-page input[disabled], 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[disabled], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page select[disabled], 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[disabled], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page textarea[disabled],
+.wp-travel-form-field.button-field input[type="submit"],
+.payment-content input[type="submit"],
+.dashboard-tab .payment-content input[type="submit"], 
+.dashboard-tab .account-setting input[type="submit"],
+.wp-travel-default-article .wp-travel-explore a,
+.wp-travel-toolbar .wp-travel-filter-button .btn-wp-travel-filter,
+.description-left .entry-title a:hover, 
+.description-left .entry-title a:focus, 
+.item_cart a:hover, .item_cart a:focus,
+.description-left .entry-meta a:hover, 
+.description-left .entry-meta a:focus,
+#colophon .site-info a,
+#wp-travel-send-enquiries,
+.wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:hover, 
+.wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:focus,
+.resp-tabs-container .list-item-wrapper a:hover strong, 
+.resp-tabs-container .list-item-wrapper a:focus strong {
+    color: #099;
+}
+
+#respond input[type="submit"],
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover,
+.pagination .page-numbers:focus,
+.reply a,
+.btn,
+.btn:hover,
+.btn:focus,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now:hover,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now:focus,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now:hover,
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field.button-field input#wp-travel-book-now:focus,
+.wp-travel-toolbar .wp-travel-post-filter .wp-travel-filter-by-heading,
+.ws-theme-cart-page .coupon input[type=submit]:hover, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type=submit]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type=submit]:hover, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type=submit]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon textarea[type=submit]:hover, 
+.ws-theme-cart-page .coupon input[type=submit]:focus, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type=submit]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type=submit]:focus, 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type=submit]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon textarea[type=submit]:focus, 
+.ws-theme-cart-page .actions .book-now-btn:hover, .ws-theme-cart-page .actions .book-now-btn:focus, .ws-theme-cart-page button[disabled]:hover, 
+.ws-theme-cart-page input[disabled]:hover, 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[disabled]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page select[disabled]:hover,
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[disabled]:hover, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page textarea[disabled]:hover, 
+.ws-theme-cart-page button[disabled]:focus, .ws-theme-cart-page input[disabled]:focus, 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[disabled]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page select[disabled]:focus, 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[disabled]:focus, 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page textarea[disabled]:focus, 
+.wp-travel-form-field.button-field input[type="submit"]:hover, .wp-travel-form-field.button-field input[type="submit"]:focus, 
+.payment-content input[type="submit"]:hover, 
+.payment-content input[type="submit"]:focus, 
+.dashboard-tab .payment-content input[type="submit"]:hover, 
+.dashboard-tab .account-setting input[type="submit"]:hover, 
+.dashboard-tab .payment-content input[type="submit"]:focus, 
+.dashboard-tab .account-setting input[type="submit"]:focus, 
+.wp-travel-default-article .wp-travel-explore a:hover, 
+.wp-travel-default-article .wp-travel-explore a:focus, 
+.wp-travel-toolbar .wp-travel-filter-button .btn-wp-travel-filter:hover, 
+.wp-travel-toolbar .wp-travel-filter-button .btn-wp-travel-filter:focus,
+.ws-theme-cart-page .coupon input[type=submit], 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type=submit], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type=submit], 
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type=submit], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon textarea[type=submit],
+.ws-theme-cart-page .actions .book-now-btn,
+.ws-theme-cart-page button[disabled], 
+.ws-theme-cart-page input[disabled], 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[disabled], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page select[disabled], 
+.ws-theme-cart-page .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[disabled], 
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page textarea[disabled],
+.wp-travel-form-field.button-field input[type="submit"],
+.payment-content input[type="submit"],
+.dashboard-tab .payment-content input[type="submit"], 
+.dashboard-tab .account-setting input[type="submit"],
+.wp-travel-default-article .wp-travel-explore a,
+.wp-travel-toolbar .wp-travel-filter-button .btn-wp-travel-filter,
+#wp-travel-send-enquiries {
+	border-color: #099;
+}
+
+#latest-posts article .post-item-wrapper {
+    border-bottom-color: #099;
+}
+
+.widget_search form.search-form button.search-submit:hover svg,
+.widget_search form.search-form button.search-submit:focus svg {
+	fill: #099;
+}
+
+.dashboard-tab ul.resp-tabs-list li.resp-tab-active {
+    -webkit-box-shadow: inset 2px 0px 0 #099;
+    box-shadow: inset 2px 0px 0 #099;
+}
+/*--------------------------------------------------------------
+# Orange Color
+--------------------------------------------------------------*/
+.backtotop,
+input[type="submit"],
+#secondary .jetpack_subscription_widget input[type="submit"]:hover,
+#secondary .jetpack_subscription_widget input[type="submit"]:focus,
+.author-name:after,
+.reply a:hover:before,
+.reply a:focus:before,
+.read-more a:hover svg,
+.read-more a:focus svg,
+.wp-travel-filter form input[type="submit"],
+#travel-destinations .trip-price span,
+#latest-posts .featured-image .post-categories,
+#latest-posts .entry-container .read-more a:hover svg, 
+#latest-posts .entry-container .read-more a:focus svg {
+    background-color: #099;
+}
+
+.site-title a:hover,
+.site-title a:focus,
+.post-navigation a, 
+.posts-navigation a,
+.navigation.post-navigation a:hover,
+.navigation.posts-navigation a:hover,
+.navigation.post-navigation a:focus,
+.navigation.posts-navigation a:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.widget_popular_post h3 a:hover,
+.widget_popular_post h3 a:focus,
+.widget_popular_post a:hover time,
+.widget_popular_post a:focus time,
+.widget_latest_post h3 a:hover,
+.widget_latest_post h3 a:focus,
+.widget_latest_post a:hover time,
+.widget_latest_post a:focus time,
+.widget_featured_courses .course-wrapper h5 a:hover,
+.widget_featured_courses .course-wrapper h5 a:focus,
+.widget_featured_courses .tp-course-price,
+.widget_popular_courses .course-wrapper h5 a:hover,
+.widget_popular_courses .course-wrapper h5 a:focus,
+.widget_popular_courses .tp-course-price,
+.page-header small,
+.single-post-wrapper span.tags-links a:hover,
+.single-post-wrapper span.tags-links a:focus,
+.comment-metadata a:hover time,
+.comment-metadata a:focus time,
+.section-subtitle,
+.read-more a:hover,
+.read-more a:focus,
+#recommended-packages .trip-metas .fa,
+ul.post-categories li a,
+#call-to-action span.current-price,
+#travel-preparation .prepared-list .item-wrapper .entry-title i,
+#client-testimonial .designation,
+#latest-posts .entry-container .read-more a:hover, 
+#latest-posts .entry-container .read-more a:focus,
+.sticky-post-wrapper .read-more a:hover, 
+.sticky-post-wrapper .read-more a:focus,
+.single-wrapper .entry-meta span a:hover, 
+.single-wrapper .entry-meta span a:focus,
+.single-wrapper .cat-links a,
+.single-wrapper .entry-meta span.byline a.fn:hover,
+.single-wrapper .entry-meta span.byline a.fn:focus,
+.single-wrapper .entry-meta > span a:hover,
+.single-wrapper .entry-meta > span a:focus {
+	color: #099;
+}
+
+.main-navigation ul.nav-menu > li > a.search:hover svg.icon-search,
+.main-navigation ul.nav-menu > li > a.search:focus svg.icon-search,
+.main-navigation li.search-menu a:hover svg,
+.main-navigation li.search-menu a:focus svg,
+.main-navigation li.search-menu a.search-active svg,
+.navigation.post-navigation a:hover svg,
+.navigation.posts-navigation a:hover svg,
+.navigation.post-navigation a:focus svg,
+.navigation.posts-navigation a:focus svg,
+.single-post-wrapper span.posted-on svg,
+.single-post-wrapper span.cat-links svg,
+#latest-posts .read-more a svg,
+#latest-posts .read-more a svg,
+#latest-posts .posted-on svg,
+#latest-posts .entry-container .read-more a svg,
+.archive-blog-wrapper .posted-on svg,
+.sticky-post-wrapper .posted-on svg,
+.sticky-post-wrapper .read-more a svg {
+	fill: #099;
+}
+
+input[type="submit"],
+.single-post-wrapper span.tags-links a:hover,
+.single-post-wrapper span.tags-links a:focus,
+.read-more a:hover svg,
+.read-more a:focus svg,
+#latest-posts .featured-image .read-more a:hover svg,
+#latest-posts .featured-image .read-more a:focus svg,
+#latest-posts .entry-container .read-more a svg,
+#latest-posts .entry-container .read-more a:hover svg, 
+#latest-posts .entry-container .read-more a:focus svg,
+.sticky-post-wrapper .read-more a svg {
+    border-color: #099;
+}
+
+.wp-travel-trip-meta-info ul li:before, 
+.wp-travel-trip-meta-info ul li.no-border:before {
+	background: #ddd;
+}
+
+@media screen and (min-width: 1024px) {
+	.main-navigation ul ul {
+	    border-top-color: #099;
+	}
+	.main-navigation ul#primary-menu li.current-menu-item:hover > a:after,
+	.main-navigation ul.nav-menu > li.menu-item-has-children:hover > a:after {
+		border-bottom-color: #099;
+	}
+	.main-navigation ul.sub-menu li:hover > a,
+	.main-navigation ul.sub-menu li:focus > a,
+	#latest-posts .modern-slider .slick-current + .slick-slide + .slick-slide .entry-container .read-more a:hover svg,
+	#latest-posts .modern-slider .slick-current + .slick-slide + .slick-slide .entry-container .read-more a:focus svg {
+		background-color: #099;
+	}
+}
+
+@keyframes preloader {
+    0% {height:5px;transform:translateY(0px);background: #099;}
+    25% {height:30px;transform:translateY(15px);background: #099;}
+    50% {height:5px;transform:translateY(0px);background: #099;}
+    100% {height:5px;transform:translateY(0px);background: #099;}
+}

@@ -1,0 +1,24 @@
+// Table
+.wp-block-table{
+    table{
+        thead{
+            tr{
+                th{
+                    background-color: #ececec;
+                }
+            }
+        }
+        th, td{
+            border: 1px solid #f5f5f5 !important;
+        }
+    }
+}
+
+// heading
+h5{
+    font-size: 20px;
+}
+
+h6{
+    font-size: 18px;
+}

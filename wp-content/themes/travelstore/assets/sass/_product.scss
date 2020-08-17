@@ -1,0 +1,187 @@
+[class*="column-"]{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.products{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-bottom: 0;
+    clear: both;
+    list-style: none;
+    &.columns-5{
+        li{
+            @media(min-width: 768px){
+                width: 16.9%;
+                margin-right: 3.8%;
+            }
+        }
+    }
+    &.columns-4{
+        li{
+            @media(min-width: 768px){
+                width: 21.7391304348%;
+                float: left;
+                margin-right: 4.347826087%;
+            }
+        }
+    }
+    &.columns-3{
+        li{
+            @media(min-width: 768px){
+                width: 30.4347826087%;
+                float: left;
+                margin-right: 4.347826087%;
+            }
+        }
+    }
+    &.columns-2{
+        li{
+            @media(min-width: 768px){
+                width: 47.8260869565%;
+                float: left;
+                margin-right: 4.347826087%;
+            }
+        }
+    }
+    &.columns-1{
+        li{
+            @media(min-width: 768px){
+                width: 100%;
+                margin-right: 0;
+                float: none;
+            }
+        }
+    }
+    .product{
+        list-style: none;
+        margin-left: 0;
+        margin-bottom: 4.235801032em;
+        text-align: center;
+        position: relative;
+        @media(max-width: 991px) and (min-width: 576px){
+            width: 47% !important;
+            margin-right: 5%;
+            &:nth-child(even){
+                margin-right: 0;
+            }
+        }
+        @media(min-width: 768px){
+            font-size: 0.875em;
+        }
+        img{
+            display: block;
+            margin: 0 auto 1.618em;
+            width: 100%;
+            height: 315px;
+            object-fit: cover;
+        }
+        &.product-pro-banner{
+            position: relative;
+            color: #fff;
+            background-size: cover;
+            border-radius: 3px;
+            border: 1px solid $primaryColor;
+            overflow: hidden;
+            .banner-image{
+                display: inline !important;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border: 1px solid;
+            }
+            .banner-caption{
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                padding: 30px;
+                text-align: left;
+                min-height: 100%;
+                background: linear-gradient(to bottom, #fff, transparent 130%);
+                padding-bottom: 75px;
+                p{
+                    color: #000;
+                }
+                a{
+                    display: block;
+                }
+                .woocommerce-loop-product__title{
+                    color: #444;
+                    line-height: 30px;
+                    text-shadow: 0 10px 20px rgba(#000, .5);
+                }
+                .btn{
+                    display: inline-block;
+                }
+            }
+            .stars{
+                i{
+                    color: rgba(#fff, .5);
+                }
+            }
+            .woocommerce-loop-product__title{
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .woocommerce-loop-product__title, .price{
+                color: #fff;
+            }
+        }
+        .woocommerce-loop-product__title{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.5407911001em;
+        }
+        .onsale{
+            border: 1px solid;
+            border-color: #43454b;
+            color: #43454b;
+            padding: 0.202em 0.6180469716em;
+            font-size: 0.875em;
+            text-transform: uppercase;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1em;
+            border-radius: 3px;
+            position: relative;
+        }
+        .price{
+            display: block;
+            color: #60646c;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            margin-top: .5rem;
+            del{
+                opacity: 0.5;
+                font-weight: 400;
+                margin-right: .6180469716em;
+            }
+            .woocommerce-Price-amount, .woocommerce-Price-currencySymbol{
+                //display: block;
+                color: #43454b;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+        }
+        .wp-travel-average-review{
+            margin: 0 auto;
+            display: block;
+            a span::before, &::before{
+                color: $primaryColor;
+            }
+        }
+        .button{
+            margin-bottom: 0.236em;
+            &:hover{
+                text-decoration: none !important;
+            }
+        }
+        &.last{
+            margin-right: 0;
+        }
+    }
+}

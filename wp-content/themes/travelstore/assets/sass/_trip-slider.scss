@@ -1,0 +1,49 @@
+.owl-stage-outer{
+    overflow: visible !important;
+    .owl-stage{
+        .owl-item{
+            opacity: 0;
+            pointer-events: none;
+            &.active{
+                opacity: 1;
+                pointer-events: unset;
+            }
+        }
+    }
+}
+#trip-slider, #featured-trip-slider{
+    .owl-stage{
+        display: flex;
+        .item{
+            height: 100%;
+        }
+    }
+    .category-item{
+        position: relative;
+        height: 100%;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .woocommerce-loop-category__title{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 10px 20px;
+            background: linear-gradient(to bottom, transparent, rgba(#000,.5));
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+#featured-trip-slider{
+    .owl-nav{
+        [class*="owl-"]{
+            top: 168px;
+        }
+    }
+}
