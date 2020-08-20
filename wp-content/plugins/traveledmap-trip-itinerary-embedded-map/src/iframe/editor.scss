@@ -1,0 +1,210 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.traveledmap-trip-edit-block {
+	.components-panel {
+		h2 {
+			font-size: 1.5rem;
+
+			&::before {
+				content: none;
+			}
+		}
+
+		.components-panel__body {
+			padding-top: 0;
+
+			&.is-opened > .components-panel__body-title {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		;
+
+			.components-panel__body-toggle {
+				span {
+					position: absolute;
+					right: 0;
+					top: 23px;
+				}
+			}
+		}
+
+		.components-panel__row {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-top: 10px;
+
+			p {
+				font-size: 13px;
+				margin-top: 0;
+			}
+
+			.components-toggle-control {
+				margin-bottom: 5px;
+
+				.components-base-control__field {
+					margin-bottom: 0;
+				}
+
+				.components-base-control__help {
+					font-size: 12px;
+				}
+			}
+		}
+
+		.input-100 {
+			input {
+				max-width: 100px;
+			}
+		}
+	}
+
+	.map-iframe {
+		width: 100%;
+		height: 500px;
+	}
+
+
+	.ml-auto {
+		margin-left: auto;
+	}
+
+	.mb-0 {
+		margin-bottom: 0;
+	}
+	.mt-5 {
+		margin-top: 5px;
+	}
+
+	.ml-10 {
+		margin-left: 10px;
+	}
+
+	.mr-10 {
+		margin-right: 10px;
+	}
+
+	.d-flex {
+		display: flex;
+	}
+
+	.flex-center {
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+	}
+
+	.justify-content-between {
+		justify-content: space-between;
+	}
+
+	.flex-1 {
+		flex-grow: 1;
+	}
+
+
+	.text-center {
+		text-align: center;
+	}
+
+	.note {
+		font-size: 80%;
+	}
+}
+
+#traveledmap_trip_metabox {
+	.mt-5 {
+		margin-top: 5px;
+	}
+
+	.components-panel__row {
+		flex-direction: column;
+		margin-bottom: 10px;
+		margin-top: 0;
+
+		input:not([type='checkbox']) {
+			width: 99%;
+		}
+
+		&.flex-start {
+			align-items: flex-start;
+		}
+	}
+
+	#traveledmap-check-trip-button {
+		&:not(.is-loading) {
+			.not-loading {
+				display: inline;
+			}
+			.loading {
+				display: none;
+			}
+		}
+		&.is-loading {
+			.not-loading {
+				display: none;
+			}
+			.loading {
+				display: inline;
+			}
+		}
+	}
+
+	#traveledmap-metabox-state {
+		.tm-error-message {
+			color: #bd0000;
+		}
+		.tm-warning-message {
+			color: #ba880d;
+		}
+
+		.tm-success-message {
+			color: #3a881e;
+		}
+
+		display: none;
+
+		&.error {
+			display: block;
+			.tm-error-message {
+				display: block;
+			}
+			.tm-warning-message {
+				display: none;
+			}
+			.tm-success-message {
+				display: none;
+			}
+		}
+
+		&.warning {
+			display: block;
+			.tm-error-message {
+				display: none;
+			}
+			.tm-warning-message {
+				display: block;
+			}
+			.tm-success-message {
+				display: none;
+			}
+		}
+
+		&.success {
+			display: block;
+			.tm-error-message {
+				display: none;
+			}
+			.tm-warning-message {
+				display: none;
+			}
+			.tm-success-message {
+				display: block;
+			}
+		}
+	}
+}

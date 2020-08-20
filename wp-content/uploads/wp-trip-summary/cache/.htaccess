@@ -1,0 +1,8 @@
+<FilesMatch "\.cache">
+	order allow,deny
+	deny from all
+</FilesMatch>
+<FilesMatch "\.gpx">
+	order allow,deny
+	deny from all
+</FilesMatch>

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.wp-block-traveledmap-trip {
+  z-index: 2000; }
+  .wp-block-traveledmap-trip .traveledmap-post-map {
+    width: 100%;
+    height: 500px;
+    -webkit-transition: height .3s ease;
+    -o-transition: height .3s ease;
+    transition: height .3s ease;
+    margin-bottom: 0; }
+  .wp-block-traveledmap-trip .actions-wrapper {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    margin-top: -7px; }
+    .wp-block-traveledmap-trip .actions-wrapper button {
+      background-color: transparent;
+      border: 1px solid #404040;
+      border-radius: 50px;
+      color: #404040;
+      width: 30px;
+      height: 30px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding: 0;
+      margin: 0;
+      -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+      -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+      .wp-block-traveledmap-trip .actions-wrapper button:focus {
+        outline: none; }
+      .wp-block-traveledmap-trip .actions-wrapper button:hover {
+        background-color: #404040;
+        color: white; }
+      .wp-block-traveledmap-trip .actions-wrapper button .expand-icon, .wp-block-traveledmap-trip .actions-wrapper button .reduce-icon, .wp-block-traveledmap-trip .actions-wrapper button .show-icon, .wp-block-traveledmap-trip .actions-wrapper button .hide-icon {
+        display: -ms-flexbox;
+        display: flex; }
+        .wp-block-traveledmap-trip .actions-wrapper button .expand-icon svg, .wp-block-traveledmap-trip .actions-wrapper button .reduce-icon svg, .wp-block-traveledmap-trip .actions-wrapper button .show-icon svg, .wp-block-traveledmap-trip .actions-wrapper button .hide-icon svg {
+          width: 14px;
+          height: 14px; }
+  .wp-block-traveledmap-trip.is-extended button .expand-icon {
+    display: none; }
+  .wp-block-traveledmap-trip.is-extended button .reduce-icon {
+    display: block; }
+  .wp-block-traveledmap-trip:not(.is-extended) button .expand-icon, .wp-block-traveledmap-trip:not(.is-extended) button .hide-icon {
+    display: block; }
+  .wp-block-traveledmap-trip:not(.is-extended) button .reduce-icon {
+    display: none; }
+  .wp-block-traveledmap-trip.is-hidden .toggle-expand-button {
+    display: none; }
+  .wp-block-traveledmap-trip.is-hidden button .expand-icon, .wp-block-traveledmap-trip.is-hidden button .hide-icon {
+    display: none; }
+  .wp-block-traveledmap-trip.is-hidden button .reduce-icon, .wp-block-traveledmap-trip.is-hidden button .show-icon {
+    display: block; }
+  .wp-block-traveledmap-trip:not(.is-hidden) button .hide-icon {
+    display: block; }
+  .wp-block-traveledmap-trip:not(.is-hidden) button .show-icon {
+    display: none; }
+  .wp-block-traveledmap-trip .flex-center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .wp-block-traveledmap-trip .mr-5 {
+    margin-right: 5px !important; }
+
+.traveledmap-trip-breakpoints {
+  display: none; }
+
+.traveledmap-trip-widget-wrapper {
+  position: relative; }
+  .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container {
+    z-index: 2000; }
+    .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content.not-extandable .traveledmap-trip-widget-overlay {
+      display: none; }
+    .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content {
+      position: relative;
+      height: 100%;
+      overflow: hidden; }
+      .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content .traveledmap-trip-widget-map {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 0; }
+      .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content .traveledmap-trip-widget-overlay {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%);
+        height: 50px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        -webkit-transition: -webkit-transform .3s ease;
+        transition: -webkit-transform .3s ease;
+        -o-transition: transform .3s ease;
+        transition: transform .3s ease;
+        transition: transform .3s ease, -webkit-transform .3s ease;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        color: white;
+        cursor: pointer; }
+        .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content .traveledmap-trip-widget-overlay svg {
+          width: 18px;
+          height: 18px;
+          -webkit-transition: -webkit-transform .2s ease;
+          transition: -webkit-transform .2s ease;
+          -o-transition: transform .2s ease;
+          transition: transform .2s ease;
+          transition: transform .2s ease, -webkit-transform .2s ease; }
+        .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content .traveledmap-trip-widget-overlay:hover svg {
+          -webkit-transform: scale(1.3);
+              -ms-transform: scale(1.3);
+                  transform: scale(1.3); }
+      @media (max-width: 768px) {
+        .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content .traveledmap-trip-widget-overlay  {
+          display: none; } }
+      .traveledmap-trip-widget-wrapper .traveledmap-trip-widget-map-container .traveledmap-trip-widget-map-content:hover .traveledmap-trip-widget-overlay {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0); }
+
+.traveledmap-trip-widget-overlay {
+  background-color: red; }
+
+.traveledmap-is-hidden {
+  display: none; }

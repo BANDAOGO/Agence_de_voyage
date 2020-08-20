@@ -1,0 +1,149 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.traveledmap-trip-edit-block .components-panel h2 {
+  font-size: 1.5rem; }
+  .traveledmap-trip-edit-block .components-panel h2::before {
+    content: none; }
+
+.traveledmap-trip-edit-block .components-panel .components-panel__body {
+  padding-top: 0; }
+  .traveledmap-trip-edit-block .components-panel .components-panel__body.is-opened > .components-panel__body-title {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .traveledmap-trip-edit-block .components-panel .components-panel__body .components-panel__body-toggle span {
+    position: absolute;
+    right: 0;
+    top: 23px; }
+
+.traveledmap-trip-edit-block .components-panel .components-panel__row {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  margin-top: 10px; }
+  .traveledmap-trip-edit-block .components-panel .components-panel__row p {
+    font-size: 13px;
+    margin-top: 0; }
+  .traveledmap-trip-edit-block .components-panel .components-panel__row .components-toggle-control {
+    margin-bottom: 5px; }
+    .traveledmap-trip-edit-block .components-panel .components-panel__row .components-toggle-control .components-base-control__field {
+      margin-bottom: 0; }
+    .traveledmap-trip-edit-block .components-panel .components-panel__row .components-toggle-control .components-base-control__help {
+      font-size: 12px; }
+
+.traveledmap-trip-edit-block .components-panel .input-100 input {
+  max-width: 100px; }
+
+.traveledmap-trip-edit-block .map-iframe {
+  width: 100%;
+  height: 500px; }
+
+.traveledmap-trip-edit-block .ml-auto {
+  margin-left: auto; }
+
+.traveledmap-trip-edit-block .mb-0 {
+  margin-bottom: 0; }
+
+.traveledmap-trip-edit-block .mt-5 {
+  margin-top: 5px; }
+
+.traveledmap-trip-edit-block .ml-10 {
+  margin-left: 10px; }
+
+.traveledmap-trip-edit-block .mr-10 {
+  margin-right: 10px; }
+
+.traveledmap-trip-edit-block .d-flex {
+  display: -ms-flexbox;
+  display: flex; }
+
+.traveledmap-trip-edit-block .flex-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.traveledmap-trip-edit-block .justify-content-between {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.traveledmap-trip-edit-block .flex-1 {
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+.traveledmap-trip-edit-block .text-center {
+  text-align: center; }
+
+.traveledmap-trip-edit-block .note {
+  font-size: 80%; }
+
+#traveledmap_trip_metabox .mt-5 {
+  margin-top: 5px; }
+
+#traveledmap_trip_metabox .components-panel__row {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 0; }
+  #traveledmap_trip_metabox .components-panel__row input:not([type='checkbox']) {
+    width: 99%; }
+  #traveledmap_trip_metabox .components-panel__row.flex-start {
+    -ms-flex-align: start;
+        align-items: flex-start; }
+
+#traveledmap_trip_metabox #traveledmap-check-trip-button:not(.is-loading) .not-loading {
+  display: inline; }
+
+#traveledmap_trip_metabox #traveledmap-check-trip-button:not(.is-loading) .loading {
+  display: none; }
+
+#traveledmap_trip_metabox #traveledmap-check-trip-button.is-loading .not-loading {
+  display: none; }
+
+#traveledmap_trip_metabox #traveledmap-check-trip-button.is-loading .loading {
+  display: inline; }
+
+#traveledmap_trip_metabox #traveledmap-metabox-state {
+  display: none; }
+  #traveledmap_trip_metabox #traveledmap-metabox-state .tm-error-message {
+    color: #bd0000; }
+  #traveledmap_trip_metabox #traveledmap-metabox-state .tm-warning-message {
+    color: #ba880d; }
+  #traveledmap_trip_metabox #traveledmap-metabox-state .tm-success-message {
+    color: #3a881e; }
+  #traveledmap_trip_metabox #traveledmap-metabox-state.error {
+    display: block; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.error .tm-error-message {
+      display: block; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.error .tm-warning-message {
+      display: none; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.error .tm-success-message {
+      display: none; }
+  #traveledmap_trip_metabox #traveledmap-metabox-state.warning {
+    display: block; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.warning .tm-error-message {
+      display: none; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.warning .tm-warning-message {
+      display: block; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.warning .tm-success-message {
+      display: none; }
+  #traveledmap_trip_metabox #traveledmap-metabox-state.success {
+    display: block; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.success .tm-error-message {
+      display: none; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.success .tm-warning-message {
+      display: none; }
+    #traveledmap_trip_metabox #traveledmap-metabox-state.success .tm-success-message {
+      display: block; }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<p style="margin-bottom: 500px;">
+		Initial div
+	</p>
+	<div id="toronto" class="tm-anchor" style="height: 1000px; background-color: black;">
+		<p>Toronto</p>
+	</div>
+
+	<div id="ottawa" class="tm-anchor" style="height: 1000px; background-color: red;">
+		<p>Ottawa</p>
+	</div>
+
+	<div id="montreal" class="tm-anchor" style="height: 1000px; background-color: green;">
+		<p>Montreal</p>
+	</div>
+
+	<div id="test1" class="tm-anchor" style="height: 1000px; background-color: purple;">
+		<p>Test1</p>
+	</div>
+
+<script>
+	// TODO
+	// la logique a adopter c'est peut etre de dire que si 50% de l'écran est cover par un article, c'est lui qu'on affiche
+
+	// Le window.pageYOffset, c'est la "longueur scrollée depuis le haut de la page": 1000 veut dire que j'ai scrollé 1000px
+	// Le element.rect.top c'est la distance à laquelle un élément est du haut de la page
+	// Le document.body.scrollTop c'est la distance entre le body et le haut de la page (genre si y'a un header de 100px, je suppose que ça retourne 100 si le header est pas dans le body)
+
+	let currentHash = null;
+	let previousScrollDistance = 0;
+	let isScrollingDown = true;
+	window.addEventListener("scroll", () => {
+		const currentScrollDistance = window.pageYOffset;
+		isScrollingDown = currentScrollDistance > previousScrollDistance;
+		previousScrollDistance = currentScrollDistance;
+		const CONVENIENT_DISTANCE_TM = 200;
+		let closestIndex = 0;
+		let closestDistance = 1000000;
+		const anchors = Array.from(document.getElementsByClassName("tm-anchor"));
+
+		anchors.forEach((anchor, index) => {
+			const rect = anchor.getBoundingClientRect();
+			const distance = rect.top;
+
+			if(Math.abs(distance) < Math.abs(closestDistance)) {
+				closestDistance = distance;
+				closestIndex = index;
+			}
+		});
+
+		if(CONVENIENT_DISTANCE > closestDistance) {
+			if(!isScrollingDown) {
+				if (closestDistance > 0) {
+					closestIndex = closestIndex === 0 ? 0 : closestIndex - 1;
+				}
+			}
+
+			const hash = anchors[closestIndex].getAttribute("id");
+			if(currentHash !== hash) {
+				history.pushState(null, null, "#" + hash);
+				currentHash = hash;
+			}
+		}
+
+		const firstAnchor = anchors[0];
+		if(currentHash !== null && currentHash === firstAnchor.getAttribute("id") && firstAnchor.getBoundingClientRect().top > CONVENIENT_DISTANCE) {
+			history.pushState(null, null, "#");
+			currentHash = null;
+		}
+	});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<h1 id="help-root">Sommaire</h1>
+<ul>
+<li><a href="#general-information">Détails généraux</a></li>
+<li><a href="#viewer-component">Composant de visualisation</a></li>
+<li><a href="#editor-component">Composant d'édition</a></li>
+<li><a href="#configuration-management">Configuration et gestion</a></li>
+</ul>
+<h1 id="general-information">Détails généraux</h1>
+<h2 id="dg-about">Environ</h2>
+<h3 id="dg-project-purpose">Objectif du projet</h3>
+<p>Le projet a commencé pour une raison aussi égoïste que possible: je voulais tenir un journal structuré sur les voyages que je fais.<br />
+Pendant le cours, cependant, j'ai réalisé que quelqu'un d'autre pourrait être en mesure d'aider, alors j'ai décidé de le publier en open source, avec une licence aussi restrictive que possible.<br />
+En général, le module gère les catégories suivantes:</p>
+<ul>
+<li>résumé technique - présente quelques détails prosaïques tels que: longueur, différence de niveau totale, type de terrain, etc.;</li>
+<li>Tracé GPS de l'itinéraire, affiché simplement sur une carte, avec deux points marqués: le point de départ (en vert) et le point d'arrivée (en rouge).</li>
+</ul>
+<h3 id="dg-trip-types">Types de voyage</h3>
+<p>Dans le résumé technique, nous avons inclus les types d'informations suivants:</p>
+<ul>
+<li>données spécifiques pour les itinéraires cyclables;</li>
+<li>données spécifiques pour la randonnée (trekking / randonnée);</li>
+<li>dates de tournée spécifiques avec train.</li>
+</ul>
+<p>En d'autres termes, vous pouvez documenter (uniquement) ces trois types de promenades.</p>
+<h3 id="dg-main-plugin-components">Principaux composants</h3>
+<p>Selon les différentes fonctions exercées par les zones du module, nous pouvons discuter des composants suivants:</p>
+<ul>
+<li>Composant de visualisation: c'est la case affichée juste en dessous de l'article et qui présente toutes les informations mentionnées ci-dessus (<a href="#viewer-component">Détails ici</a>);</li>
+<li>Composant d'édition: il est joint au formulaire de création / édition d'article et permet la modification / suppression des données sur l'itinéraire parcouru (<a href="#editor-component">Détails ici</a>);</li>
+<li>Composant de configuration: il traite de la gestion des options générales, mais aussi de la gestion des nomenclatures (listes de valeurs prédéfinies qui peuvent être sélectionnées lorsque les données sur l'itinéraire sont terminées) (<a href="#configuration-component">Détails ici</a>).</li>
+</ul>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2 id="dg-screenshots">Captures d'écran</h2>
+<h4>Page de configuration</h4>
+<p><img src="$helpDataDirUrl$/screenshots/admin-settings.png" alt="Page de configuration" title="Page de configuration" /></p>
+<h4>Édition d'article - Lanceur de l'éditeur de résumé de voyage</h4>
+<p><img src="$helpDataDirUrl$/screenshots/admin-edit-launcher.png" alt="Édition d'article - Lanceur de l'éditeur de résumé de voyage" title="Édition d'article - Lanceur de l'éditeur de résumé de voyage" /></p>
+<h4>Édition d'article - Lanceur de l'éditeur de résumé de voyage (éditeur de blocs)</h4>
+<p><img src="$helpDataDirUrl$/screenshots/admin-edit-launcher-block.png" alt="Édition d'article - Lanceur de l'éditeur de résumé de voyage (éditeur de blocs)" title="Édition d'article - Lanceur de l'éditeur de résumé de voyage (éditeur de blocs)" /></p>
+<h4>Édition d'article - Résumé technique - Sélection du type d'itinéraire</h4>
+<p><img src="$helpDataDirUrl$/screenshots/admin-edit-summary-empty.png" alt="Modifier l'article - Résumé technique - Sélection du type d'itinéraire" title="Article Modifier - Résumé technique - Sélection du type d'itinéraire" /></p>
+<h4>Modification d'articles - Résumé technique - Informations sur les itinéraires cyclables</h4>
+<p><img src="$helpDataDirUrl$/screenshots/admin-edit-summary-bike.png" alt="Modification d'article - Résumé technique - Informations sur l'itinéraire cyclable" title="Edition d'article - Résumé technique - Informations sur l'itinéraire cyclable" /></p>
+<h4>Édition d'article - Résumé technique - Carte</h4>
+<p><img src="$helpDataDirUrl$/screenshots/admin-edit-map.png" alt="Édition d'article - Résumé technique - Carte" title="Édition d'article - Résumé technique - Carte" /></p>
+<h4>Item - Teaser d'en haut</h4>
+<p><img src="$helpDataDirUrl$/screenshots/viewer-teaser-top.png" alt="Article - Teaser d'en haut" title="Article - Teaser d'en haut" /></p>
+<h4>Article - Résumé technique</h4>
+<p><img src="$helpDataDirUrl$/screenshots/viewer-summary.png" alt="Article - Résumé technique" title="Article - Résumé technique" /></p>
+<h4>Article - Carte</h4>
+<p><img src="$helpDataDirUrl$/screenshots/viewer-map.png" alt="Article - Carte" title="Article - Carte" /></p>
+<h4>Liste des articles - Colonnes d'information</h4>
+<p><img src="$helpDataDirUrl$/screenshots/post-listing-columns.png" alt="Liste d'articles - Colonnes d'information" title="Liste d'articles - Colonnes d'information" /></p>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2 id="dg-technical-requirements">Exigences techniques</h2>
+<p>Pour exécuter ce module, vous avez besoin des éléments suivants:</p>
+<ul>
+<li>PHP version 5.6.2 ou ultérieure;</li>
+<li>MySQL version 5.7 ou ultérieure (avec prise en charge des données SIG);</li>
+<li>WordPress 5.0 ou version ultérieure;</li>
+<li>Extension PHP libxml;</li>
+<li>Extension PHP SimpleXml;</li>
+<li>extension PHP mysqli;</li>
+<li>Extension PHP mbstring - pas strictement contraignante, mais recommandée;</li>
+<li>Extension PHP zlib - pas strictement contraignante, mais recommandée.</li>
+</ul>
+<p>En principe, toutes ces exigences sont vérifiées lors de l'installation et le processus s'arrête si elles ne sont pas respectées.</p>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2 id="dg-licensing-terms">Licence</h2>
+<p>Ce module est distribué sous la <a href="https://opensource.org/licenses/BSD-3-Clause">Nouvelle licence BSD</a>. Qu'est-ce que cela signifie:</p>
+<ul>
+<li>que vous pouvez l'utiliser absolument gratuitement et sans autre obligation matérielle ou financière;</li>
+<li>que vous pouvez le redistribuer gratuitement et sans autre obligation matérielle ou financière;</li>
+<li>que vous devez inclure une copie des conditions de licence où vous l'installez ou chaque fois que vous le redistribuez;</li>
+<li>qu'aucune garantie de bon fonctionnement, d'aucune sorte, ni implicite ni explicite n'est offerte.</li>
+</ul>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2 id="dg-credits">Mentions et remerciements</h2>
+<p>Le module WP-Trip-Summary utilise les bibliothèques suivantes:  </p>
+<ol>
+<li><a href="https://github.com/joshcam/PHP-MySQLi-Database-Class">PHP-MySQLi-Database-Class</a> - une bibliothèque construite sur mysqli. Il est utilisé à la place de wpdb, le composant WordPress standard.</li>
+<li><a href="http://social-library.org/">MimeReader</a> - où le détecteur de type MIME a été écrit par Shane Thompson.</li>
+<li><a href="https://github.com/JangoSteve/jQuery-EasyTabs">jQuery EasyTabs</a> - plug-in jQuery pour organiser le contenu sur des onglets / onglets</li>
+<li><a href="https://select2.org/">Select2</a> - plug-in jQuery utilisé pour la sélection de plusieurs éléments</li>
+<li><a href="https://github.com/Leaflet/Leaflet">Leaflet</a> - composant de carte</li>
+<li><a href="https://github.com/ifandelse/machina.js/tree/master">Machina</a> - une machine d'état implémentée en JavaScript</li>
+<li><a href="https://github.com/rstacruz/nprogress">NProgress</a> - une librairie pour une présentation visuelle de l'avancement de diverses opérations</li>
+<li><a href="https://github.com/CodeSeven/toastr">Toastr</a> - une bibliothèque JavaScript pour la présentation visuelle des notifications</li>
+<li><a href="https://github.com/medialize/URI.js">URI.js</a> - une bibliothèque JavaScript pour la construction et l'interprétation des URI</li>
+<li><a href="https://github.com/teamdf/jquery-visible">Visible</a> - le plug-in jQuery qui détermine si un élément se trouve ou non dans la zone visuelle de la fenêtre du navigateur</li>
+<li><a href="https://github.com/malsup/blockui/">blockUI</a> - plug-in jQuery qui permet d'afficher les fenêtres modales</li>
+<li><a href="http://code.google.com/p/kite/">kite</a> - moteur de modèle écrit en JavaScript, petit et simple</li>
+<li><a href="https://github.com/bbecquet/Leaflet.MagnifyingGlass">Leaflet.MagnifyingGlass</a> - plug-in Leaflet qui ajoute une loupe à la carte: agrandissement d'une zone individuelle sur la carte</li>
+<li><a href="https://github.com/Leaflet/Leaflet.fullscreen">Leaflet.fullscreen</a> - plug-in Leaflet qui permet d'afficher la carte en plein écran</li>
+</ol>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h1 id="viewer-component">Composant de visualisation</h1>
+<p>Le composant de visualisation se compose de trois zones distinctes:</p>
+<ul>
+<li>le teaser supérieur;</li>
+<li>le teaser du bas;</li>
+<li>le coffret technique lui-même.</li>
+</ul>
+<h2>Le teaser supérieur</h2>
+<p>Bien sûr, ce n'est pas un poste de qualité supérieure.<br />
+Il est affiché au-dessus du contenu de l'article, mais sous le titre et vise à guider le lecteur vers la boîte technique.<br />
+L'idée à partir de laquelle j'ai commencé est que tout le monde ne peut pas réaliser qu'il y a un tel outil sur la page et, si c'est le seul point d'intérêt, être dirigé où il veut.</p>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2>Le teaser du bas</h2>
+<p>Plus bas comme position, bien sûr, pas qualitatif.<br />
+Il est affiché sous le contenu de l'article, même sous la case technique.<br />
+Il n'est pas toujours affiché, mais uniquement lorsque le système détecte la possibilité que l'utilisateur saute par-dessus l'article et sert de moyen d'atteindre rapidement le début pour lire le bel ouvrage.</p>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2>Coffret technique</h2>
+<p>Il représente, bien sûr, la zone réelle où ils sont affichés, sur un onglet séparé:</p>
+<ul>
+<li>la carte avec l'itinéraire en surbrillance;</li>
+<li>informations techniques (distance, dénivelé, etc.).</li>
+</ul>
+<p>Chacun de ces onglets s'affiche uniquement si les informations appropriées sont présentes.<br />
+S'il n'y a aucune information pour aucun des onglets, alors le composant entier est masqué, y compris les teasers.</p>
+<p>La carte elle-même propose les outils suivants:</p>
+<ul>
+<li>Zoom avant (zoom avant) - se concentrer sur une zone particulière;</li>
+<li>Zoom arrière carte - aperçu;</li>
+<li>Affichage de la carte en plein écran;</li>
+<li>Téléchargement de piste GPX;</li>
+<li>Loupe (zoom avant sur une zone discrète / limitée de la carte).</li>
+</ul>
+<p>Certaines de ces options peuvent être désactivées à l'aide du composant de gestion, comme décrit ci-dessous.</p>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h1 id="editor-component">Composant d'édition</h1>
+<p>Le composant d'édition vous permet de modifier le résumé technique du tour et d'attacher la trace GPS.<br />
+Ainsi, comme le composant de visualisation, il est organisé en deux onglets, un pour chaque catégorie de données:</p>
+<ul>
+<li>le formulaire de modification des informations techniques;</li>
+<li>Zone de chargement et d'aperçu de la trace GPS.</li>
+</ul>
+<h2>Lanceur de l'éditeur de résumé de voyage</h2>
+<p>Le lanceur de l'éditeur de résumé de voyage d'introduction sert à intégrer le composant d'édition dans la station de travail de WordPress.<br />
+Il est présenté sous la forme d'une métabox, placée dans la barre latérale de l'écran de post-édition, intitulée: <code>Résumé du voyage</code>.<br />
+Permet un accès rapide aux informations et actions pertinentes suivantes:</p>
+<ul>
+<li>si le poste actuel dispose ou non d'informations techniques sur l'itinéraire:</li>
+<li>marqué d'une coche blanche sur un fond vert rond si oui;</li>
+<li>marqué d'un X blanc sur fond rouge rond, sinon.</li>
+<li>si le poste actuel est associé à une trace GPS:</li>
+<li>marqué d'une coche blanche sur un fond vert rond si oui;</li>
+<li>marqué d'un X blanc sur fond rouge rond, sinon.</li>
+<li>supprimer rapidement les informations techniques sur l'itinéraire attaché au message actuel (via le bouton <code>Actions rapides</code>);</li>
+<li>suppression rapide de la trace GPS attachée au poste actuel (via le bouton <code>Actions rapides</code>);</li>
+<li>télécharger la trace GPS attachée au poste actuel (via le bouton <code>Actions rapides</code>);</li>
+<li>ouvrir le composant d'édition lui-même pour le poste actuel (via le bouton <code>Modifier</code>).</li>
+</ul>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2>Le formulaire de la modification des informations techniques</h2>
+<p>L'onglet approprié est simplement appelé &quot;Informations&quot;.<br />
+S'il n'est pas terminé, il est rempli de trois boutons, un pour chaque type de tour pris en charge:</p>
+<ul>
+<li>&quot;A vélo&quot; - permet de compléter l'ensemble des informations spécifiques aux circuits à vélo;</li>
+<li>&quot;Per-pedes&quot; - permet de compléter l'ensemble d'informations spécifiques pour la randonnée (trekking / randonnée);</li>
+<li>&quot;En train&quot; - permet de compléter l'ensemble des informations touristiques spécifiques au train.</li>
+</ul>
+<p>Une fois que vous avez appuyé sur l'un de ces boutons, le formulaire réel s'affiche, selon le type de circuit choisi.</p>
+<p>Il convient de mentionner que, quelle que soit la forme, si l'un des champs qui nécessitent des valeurs dans sa nomenclature n'a pas une telle valeur définie, un lien vers la page de gestion de cette nomenclature sera affiché.</p>
+<p>En plus du formulaire, en bas de l'écran, vous trouverez deux boutons de contrôle, visibles après le choix d'un type d'itinéraire:</p>
+<ul>
+<li>&quot;Enregistrer&quot; - doit être appliqué pour les changements persistants;</li>
+<li>&quot;Supprimer les informations&quot; - doit être appliqué lorsque vous souhaitez supprimer l'ensemble des informations techniques.</li>
+</ul>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2>Formulaire de téléchargement et de prévisualisation de la trace GPS</h2>
+<p>L'onglet approprié est simplement appelé &quot;Carte et trace GPS&quot;.<br />
+Si aucune piste n'a encore été choisie, elle est remplie d'un seul bouton, ce qui vous permet de parcourir votre ordinateur personnel pour choisir le fichier GPX souhaité à joindre.</p>
+<p>Une fois la trace chargée, la carte sera centrée et son zoom ajusté pour que tout le circuit soit visible. Les fichiers GPX qui contiennent des segments hors ligne sont également pris en charge.</p>
+<p>En plus du formulaire, deux boutons de contrôle se trouvent en bas de l'écran:</p>
+<ul>
+<li>&quot;Enregistrer&quot; - doit être appliqué pour la persistance des modifications (visible uniquement si un type d'itinéraire a été choisi);</li>
+<li>&quot;Supprimer la piste&quot; - doit être appliqué lorsque vous souhaitez supprimer la piste entière (visible, bien sûr, uniquement après le téléchargement d'une piste).</li>
+</ul>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h1 id="configuration-management">Configuration et gestion</h1>
+<ul>
+<li><a href="#configure-general-options">Options génériques</a></li>
+<li><a href="#configure-lookup-data">Gestion de la nomenclature</a></li>
+</ul>
+<p>Les éléments de configuration et de gestion sont réglés pour offrir une certaine flexibilité dans l'utilisation du logiciel. Ainsi, nous pouvons parler de deux grandes et larges directions de flexibilité:</p>
+<ul>
+<li>options génériques (unités de mesure, activation / désactivation d'outils ou d'éléments d'interface, etc.);</li>
+<li>gestion de la nomenclature (c'est-à-dire les jeux d'options prédéfinis à partir desquels certains champs sont remplis, comme le niveau de difficulté).</li>
+</ul>
+<h2 id="configure-general-options">Options génériques</h2>
+<p>Il existe une page dédiée à partir de laquelle les options génériques peuvent être modifiées. Vous pouvez y accéder depuis le menu principal en allant sur: <code>WP Trip Summary -&gt; Paramètres</code>.</p>
+<p>Une fois arrivé ici, il y a les points de configuration suivants.</p>
+<h4>Système d'unités de mesure.</h4>
+<p>Vous pouvez soit le système métrique (m / km), soit le système impérial (miles / pouce).<br />
+Il est très important de noter qu'aucun calcul de conversion n'est effectué et il est supposé que lors de la saisie d'un résumé des valeurs, les valeurs sont déjà exprimées dans le système choisi ici.</p>
+<h4>Affichage ou non du teaser.</h4>
+<p>Une fois que vous avez effacé le champ et enregistré vos modifications, le teaser sur la page de l'article sera masqué.</p>
+<h4>Le texte du teaser supérieur</h4>
+<p>Le texte d'accroche affiché au-dessus de l'article. Il y a déjà un preset.</p>
+<h4>Le texte du teaser du bas</h4>
+<p>Le texte du teaser s'affiche immédiatement sous la zone de résumé. Il y a déjà un preset.</p>
+<h4>Modèle d'URL source de tuile de carte</h4>
+<p>Ici, la discussion est un peu plus longue.</p>
+<p>Tout d'abord, il convient de rappeler que la carte utilisée n'est pas une seule image, mais se compose de plusieurs images carrées, appelées tuiles qui, placées côte à côte, forment l'ensemble de la carte.</p>
+<p>Il existe plusieurs ensembles de tuiles, une pour chaque niveau de zoom, et chaque tuile est caractérisée par deux coordonnées - disons x et y - à peu près comme un échiquier.</p>
+<p>Donc, pour accéder à une tuile, nous avons besoin des informations suivantes:</p>
+<ul>
+<li>z - niveau de zoom;</li>
+<li>x - position horizontale;</li>
+<li>y - la position verticale.</li>
+</ul>
+<p>Mais il y a un autre problème: télécharger autant d'images en un temps aussi rapide que possible, parfois tout ce méga-ensemble de tuiles est copié de manière redondante sur plusieurs machines - serveurs.<br />
+Ces machines sont également numérotées / nommées - disons, par exemple, 1, 2, 3, 4, etc.<br />
+L'idée ici est que je peux - au lieu de les demander au même endroit - je peux demander une partie de la voiture 1, une partie de la voiture 2, etc., mais cela, je le répète, n'est pas un comportement obligatoire.</p>
+<p>Pour rassembler tout cela, afin de télécharger des tuiles de carte à partir d'une source autre que celle par défaut - OpenStreetMaps - vous avez le champ en question maintenant.<br />
+Et ce modèle offre les marquages ​​spéciaux suivants:</p>
+<ul>
+<li>{s} - pour spécifier où le numéro de machine est entré (par exemple {s} .tile.osm.org se traduirait par 1.tile.osm.org, 2.tile.osm.org);</li>
+<li>{z} - pour spécifier où le numéro du niveau de zoom est entré;</li>
+<li>{x} - pour spécifier où la position horizontale de la tuile est insérée;</li>
+<li>{y} - pour spécifier où la position verticale de la tuile est insérée.</li>
+</ul>
+<p>Les signets peuvent être combinés de toute façon et vous devrez consulter la documentation du fournisseur à partir duquel vous souhaitez afficher la carte.</p>
+<h4>L'URL de la page de copyright de la source de tuile de carte</h4>
+<p>Selon l'endroit où vous choisissez d'utiliser la carte, la zone de copyright peut être obligatoire ou non. C'est en tout cas une question de bon sens, je vous encourage donc à le surveiller.<br />
+L'emplacement se trouve dans le coin inférieur droit de la carte, et le champ en question vous permet maintenant d'entrer un lien vers le fournisseur.</p>
+<h4>Avis de droit d'auteur pour la source des tuiles de carte</h4>
+<p>Selon l'endroit où vous choisissez d'utiliser la carte, la zone de copyright peut être obligatoire ou non. C'est en tout cas une question de bon sens, je vous encourage donc à le surveiller.<br />
+L'emplacement se trouve dans le coin inférieur droit de la carte, et le champ en question permet désormais de saisir la note de copyright réelle.</p>
+<h4>Est-il possible de basculer la carte en plein écran?</h4>
+<p>Si vous effacez ce champ, le bouton de carte plein écran ne s'affiche plus dans la zone technique de la page de l'article.<br />
+Par défaut, le champ est coché, donc le bouton est affiché.</p>
+<h4>La loupe est-elle activée?</h4>
+<p>Si vous effacez ce champ, le bouton qui active la loupe ne sera plus affiché dans la boîte technique de la page de l'article.<br />
+Par défaut, le champ est coché, donc le bouton est affiché.</p>
+<h4>L'échelle de la carte s'affiche</h4>
+<p>Si vous effacez ce champ, l'échelle de la carte (en bas à gauche) ne sera plus affichée dans la zone technique de la page de l'article.<br />
+Par défaut, le champ est coché, donc l'échelle de la carte est affichée.</p>
+<h4>Le téléchargement des morceaux est-il autorisé?</h4>
+<p>Si vous effacez ce champ, le bouton qui vous permet de télécharger la piste GPX ne sera plus affiché dans la boîte technique de la page de l'article.<br />
+Par défaut, le champ est coché, donc le bouton est affiché.</p>
+<h4>La couleur de la ligne de trace sur la carte</h4>
+<p>Ce champ vous permet de définir la couleur avec laquelle la trace GPX est dessinée sur la carte.<br />
+S'applique à la fois au visualiseur frontal et à l'éditeur principal.<br />
+La valeur par défaut est: # 0033ff.</p>
+<h4>L'épaisseur de la ligne de trace sur la carte</h4>
+<p>Ce champ vous permet de définir l'épaisseur de ligne (en pixels) avec laquelle la trace GPS est représentée sur la carte.<br />
+S'applique à la fois au visualiseur frontal et à l'éditeur principal.<br />
+La valeur par défaut est: 3 pixels.</p>
+<p><a href="#help-root">Retour au sommaire</a></p>
+<h2 id="configure-lookup-data">Gestion de la nomenclature</h2>
+<p>Les nomenclatures sont des ensembles d'options prédéfinis à partir desquels remplir certains champs.<br />
+Les valeurs de ces options peuvent être modifiées en fonction de la langue choisie.<br />
+Toutes les langues prises en charge par WordPress sont disponibles, plus la possibilité de définir une valeur par défaut.<br />
+La valeur par défaut d'une option sera affichée lorsqu'aucune traduction n'est trouvée pour cette option pour la langue actuelle du blog.</p>
+<h3>Champs gérés</h3>
+<p>Les domaines pour lesquels la gestion de la nomenclature est requise sont:</p>
+<ul>
+<li>Niveau de difficulté;</li>
+<li>Saisons recommandées;</li>
+<li>Types de surface de route / chemin;</li>
+<li>Types de vélos recommandés;</li>
+<li>Opérateurs ferroviaires;</li>
+<li>état de la ligne;</li>
+<li>électrification;</li>
+<li>Type de ligne.</li>
+</ul>
+<h4>Niveau de difficulté</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>En vélo;</li>
+<li>Pieds.</li>
+</ul>
+<p>Il représente évidemment l'évaluation subjective de chacun de la difficulté de l'itinéraire.<br />
+Ce module propose les options prédéfinies suivantes (traduites en roumain, en anglais et française):</p>
+<ul>
+<li>Facile;</li>
+<li>Moyen;</li>
+<li>Difficile;</li>
+<li>Torture médiévale.</li>
+</ul>
+<h4>Saisons recommandées</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>En vélo;</li>
+<li>Pieds.</li>
+</ul>
+<p>Il représente évidemment les saisons au cours desquelles il est physiquement possible de parcourir l'itinéraire dans des conditions décentes (c'est-à-dire sans effort excessif et sans vous exposer à un danger imminent).<br />
+Le module propose les options prédéfinies suivantes (traduites en roumain, en anglais et française):</p>
+<ul>
+<li>Printemps;</li>
+<li>Été;</li>
+<li>Automne;</li>
+<li>Hiver.</li>
+</ul>
+<h4>Types de surface de route / chemin</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>En vélo;</li>
+<li>Pieds.</li>
+</ul>
+<p>Représente les textures / compositions des revêtements routiers rencontrés. Ex: herbe, rochers, asphalte, macadam, etc.<br />
+Le module propose les options prédéfinies suivantes (traduites en roumain, en anglais et française):</p>
+<ul>
+<li>Asphalte;</li>
+<li>Dalles de béton;</li>
+<li>Terre;</li>
+<li>Végétation;</li>
+<li>Macadam/gravier;</li>
+<li>Pierre déstabilisé.</li>
+</ul>
+<h4>Types de vélos recommandés</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>A vélo.</li>
+</ul>
+<p>Il représente les types de vélos qui peuvent être utilisés pour parcourir en toute sécurité et confortablement l'itinéraire (relatif) décrit.<br />
+Le module propose les options prédéfinies suivantes (traduites en roumain, en anglais et française):</p>
+<ul>
+<li>VTT;</li>
+<li>Courrier;</li>
+<li>Trekking;</li>
+<li>Vélo de ville.</li>
+</ul>
+<h4>Exploitants ferroviaires</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>En train.</li>
+</ul>
+<p>Il représente les entreprises qui organisent des courses le long du parcours, soit sur toute sa longueur, soit seulement partiellement.<br />
+Le module n'offre pas d'options prédéfinies.</p>
+<h4>Type de ligne</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>En train.</li>
+</ul>
+<p>Décrit si la ligne est simple ou double.<br />
+Le module propose les options prédéfinies suivantes (traduites en roumain, en anglais et française):</p>
+<ul>
+<li>Une seule ligne (une seule ligne);</li>
+<li>Double ligne (deux voies de circulation, une pour chaque direction).</li>
+</ul>
+<h4>État de la ligne</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>En train.</li>
+</ul>
+<p>Il représente l'état de la ligne sur l'itinéraire.<br />
+Le module propose les options prédéfinies suivantes (traduites en roumain, en anglais et française):</p>
+<ul>
+<li>En fonctionnement (les courses normales sont exploitées);</li>
+<li>Fermé (ne fonctionne plus, mais la ligne est en conservation ou existe toujours);</li>
+<li>Annulé (la ligne n'existe plus, étant totalement ou partiellement démantelée);</li>
+<li>En rééducation (la ligne est en cours de rééducation; le programme de circulation peut être limité / modifié).</li>
+</ul>
+<h4>Électrification</h4>
+<p>Il est disponible pour les types de parcours:</p>
+<ul>
+<li>En train.</li>
+</ul>
+<p>Il représente l'état des travaux d'électrification de la ligne.<br />
+Le module propose les options prédéfinies suivantes (traduites en roumain, en anglais et française):</p>
+<ul>
+<li>Électrifié;</li>
+<li>Non électrifié;</li>
+<li>Partiellement électrifié.</li>
+</ul>
+<h3>Opérations disponibles</h3>
+<p>Les opérations suivantes sont disponibles, chacune dans le contexte d'une langue choisie:</p>
+<ul>
+<li>Ajout d'un nouvel article dans une nomenclature;</li>
+<li>Supprimer un article existant d'une nomenclature;</li>
+<li>Modification d'un élément existant;</li>
+<li>Liste des articles existants dans une nomenclature.</li>
+</ul>
+<p>Il convient de noter que lors de l'ajout d'un élément pour la langue par défaut, le système ne demande l'étiquette que pour lui.<br />
+D'autre part, lors de l'ajout d'un élément pour une langue particulière (par exemple le roumain, l'anglais, etc.), le système demande l'étiquette pour la langue par défaut et la langue sélectionnée.</p>
+<p><a href="#help-root">Retour au sommaire</a></p>
